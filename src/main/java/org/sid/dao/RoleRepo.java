@@ -1,0 +1,9 @@
+package org.sid.dao;
+
+import org.sid.entities.Role;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface RoleRepo extends JpaRepository<Role, Integer>{
+
+	public Role findByRolename(String rolename);
+}
